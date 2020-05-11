@@ -1,6 +1,5 @@
 package com.theadvancedone.advancedprocessing.items;
 
-import com.theadvancedone.advancedprocessing.jei.AdvancedProcessingJEI;
 import com.theadvancedone.advancedprocessing.setup.ModSetup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -23,7 +22,7 @@ public class FirstItem extends Item {
         BlockPos pos = context.getPos();
         if (world.isRemote && context.getHand() == Hand.MAIN_HAND) {
             ItemStack itemStack = new ItemStack(world.getBlockState(pos).getBlock().asItem(), 1);
-            AdvancedProcessingJEI.test(itemStack);
+
             return ActionResultType.SUCCESS;
         } else {
             return ActionResultType.PASS;

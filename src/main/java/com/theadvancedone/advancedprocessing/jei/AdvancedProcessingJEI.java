@@ -3,17 +3,12 @@ package com.theadvancedone.advancedprocessing.jei;
 import com.theadvancedone.advancedprocessing.AdvancedProcessing;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
-import mezz.jei.api.recipe.IFocus;
-import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.runtime.IJeiRuntime;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-
-import java.util.List;
 
 @JeiPlugin
 public class AdvancedProcessingJEI implements IModPlugin {
-    public static IJeiRuntime runtime;
+    private IJeiRuntime runtime;
 
     @Override
     public ResourceLocation getPluginUid() {
@@ -23,10 +18,9 @@ public class AdvancedProcessingJEI implements IModPlugin {
     @Override
     public void onRuntimeAvailable(IJeiRuntime jeiRuntime) {
         runtime = jeiRuntime;
-
     }
 
-    public static void test(ItemStack itemStack) {
+    /*public void test(ItemStack itemStack) {
         IFocus focus = runtime.getRecipeManager().createFocus(IFocus.Mode.INPUT, itemStack);
         List<IRecipeCategory> list = runtime.getRecipeManager().getRecipeCategories(focus);
         List<Object> catList;
@@ -47,5 +41,5 @@ public class AdvancedProcessingJEI implements IModPlugin {
         } catch (Exception e) {
             return;
         }
-    }
+    }*/
 }
