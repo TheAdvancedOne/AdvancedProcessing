@@ -22,7 +22,6 @@ public class FirstItem extends Item {
         BlockPos pos = context.getPos();
         if (world.isRemote && context.getHand() == Hand.MAIN_HAND) {
             ItemStack itemStack = new ItemStack(world.getBlockState(pos).getBlock().asItem(), 1);
-
             return ActionResultType.SUCCESS;
         } else {
             return ActionResultType.PASS;

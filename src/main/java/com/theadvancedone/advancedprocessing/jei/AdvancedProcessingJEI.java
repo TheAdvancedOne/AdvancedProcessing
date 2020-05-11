@@ -20,7 +20,8 @@ public class AdvancedProcessingJEI implements IModPlugin {
         runtime = jeiRuntime;
     }
 
-    /*public void test(ItemStack itemStack) {
+    /*
+    public void test(ItemStack itemStack) {
         IFocus focus = runtime.getRecipeManager().createFocus(IFocus.Mode.INPUT, itemStack);
         List<IRecipeCategory> list = runtime.getRecipeManager().getRecipeCategories(focus);
         List<Object> catList;
@@ -41,5 +42,6 @@ public class AdvancedProcessingJEI implements IModPlugin {
         } catch (Exception e) {
             return;
         }
-    }*/
+    }
+    */
 }
