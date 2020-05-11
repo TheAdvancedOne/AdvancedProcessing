@@ -41,8 +41,8 @@ public class Config {
 
         FIRSTBLOCK_MAXPOWER = COMMON_BUILDER.comment("Maximum power for the Firstblock generator")
                 .defineInRange("maxPower", 100000, 0, Integer.MAX_VALUE);
-        FIRSTBLOCK_GENERATE = COMMON_BUILDER.comment("Power generated per diamond")
-                .defineInRange("generate", 1000, 0, Integer.MAX_VALUE);
+        FIRSTBLOCK_GENERATE = COMMON_BUILDER.comment("Power generated per tick")
+                .defineInRange("generate", 50, 0, Integer.MAX_VALUE);
         FIRSTBLOCK_SEND = COMMON_BUILDER.comment("Maximum power to send per side per tick")
                 .defineInRange("send", 100, 0, Integer.MAX_VALUE);
         FIRSTBLOCK_TICKS = COMMON_BUILDER.comment("Ticks per dimamonds")

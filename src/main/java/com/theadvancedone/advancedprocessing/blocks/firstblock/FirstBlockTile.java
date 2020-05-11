@@ -45,9 +45,7 @@ public class FirstBlockTile extends TileEntity implements ITickableTileEntity, I
     public void tick() {
         if (counter > 0) {
             counter--;
-            if (counter <= 0) {
-                energy.ifPresent(e -> ((CustomEnergyStorage) e).addEnergy(Config.FIRSTBLOCK_GENERATE.get()));
-            }
+            energy.ifPresent(e -> ((CustomEnergyStorage) e).addEnergy(Config.FIRSTBLOCK_GENERATE.get()));
             markDirty();
         }
         if (counter <= 0) {
