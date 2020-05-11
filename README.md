@@ -1,1 +1,1 @@
-A Minecraft mod that adds ultra-fast modular processing for *any* modded machine using a lot of RF.
+[WIP] A Minecraft mod that adds ultra-fast modular processing for *any* modded machine using a lot of RF.
