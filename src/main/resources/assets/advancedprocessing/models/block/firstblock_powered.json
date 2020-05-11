@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "advancedprocessing:block/firstblock",
+    "down": "advancedprocessing:block/firstblock",
+    "up": "advancedprocessing:block/firstblock",
+    "east": "advancedprocessing:block/firstblock",
+    "west": "advancedprocessing:block/firstblock",
+    "north": "advancedprocessing:block/firstblock_powered",
+    "south": "advancedprocessing:block/firstblock"
+  }
+}
