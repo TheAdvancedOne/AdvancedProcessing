@@ -8,7 +8,7 @@ import net.minecraft.util.ResourceLocation;
 
 @JeiPlugin
 public class AdvancedProcessingJEI implements IModPlugin {
-    private IJeiRuntime runtime;
+    public static IJeiRuntime runtime;
 
     @Override
     public ResourceLocation getPluginUid() {
